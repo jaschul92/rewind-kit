@@ -1,3 +1,3 @@
 'use strict'
 
-module.exports = exports = require('client.js')
+module.exports = exports = require('./lib/client.js')
