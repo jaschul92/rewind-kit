@@ -47,6 +47,7 @@ test('get Ops', function (done) {
 
   client.getOps('testDocId', function (error, response, body) {
     assert.ifError(error)
+    assert.deepEqual(JSON.parse(body), expectedResponse)
     done()
   })
 })
